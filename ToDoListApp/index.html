@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-container" id="list">
+    <h1>To-Do List</h1>
+
+    <input type="text" id="taskInput" placeholder="Add a new task">
+    <div id="taskError" class="error-message"></div>
+
+
+    <button class="button" id="addTaskButton">Add Task</button>
+    </br>
+    </br>
+    <label>Search: </label>
+    <input type="text" id="taskSearch" placeholder="keyword">
+
+    <ul class="todo-list" id="todoList">
+    <li><table class="tasktable">
+        <tr>
+            <th class="tasktableid">
+                Task ID
+            </th>
+            <th>
+                Description
+            </th>
+            <th class="taskCompleted">
+                Completed
+            </th>
+        </tr>
+    </table></li>
+    </ul>
+</div>
+
+<div id="hideL">
+    <label>Hide list</label>    
+    <button class="button" id="hideList">Hide</button>
+</div>
+
+<div>
+    <footer>
+        <span id="taskcount">Task count: 0</span>
+        <span id="taskcountCompleted"> Tasks completed: 0</span>
+    </footer>
+</div>
+
+</body>
+</html>
