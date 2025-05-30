@@ -154,16 +154,6 @@ function showError(elementId, message) {
   errorElement.textContent = message;
   errorElement.style.display = 'block';
   
-  const inputElement = document.getElementById(elementId.replace('Error', ''));
-  if (inputElement) {
-    inputElement.classList.add('input-error');
-    inputElement.focus();
-    
-    setTimeout(() => {
-      inputElement.classList.remove('input-error');
-    }, 500);
-  }
-  
   setTimeout(() => {
     hideError(elementId);
   }, 5000);

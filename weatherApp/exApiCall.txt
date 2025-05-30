@@ -1,0 +1,50 @@
+
+http://api.weatherapi.com/v1/current.json?key=<>&q=mexico city&aqi=no
+
+{
+    "location": {
+        "name": "Mexico City",
+        "region": "The Federal District",
+        "country": "Mexico",
+        "lat": 19.4285,
+        "lon": -99.1277,
+        "tz_id": "America/Mexico_City",
+        "localtime_epoch": 1748549793,
+        "localtime": "2025-05-29 14:16"
+    },
+    "current": {
+        "last_updated_epoch": 1748549700,
+        "last_updated": "2025-05-29 14:15",
+        "temp_c": 24.2,
+        "temp_f": 75.6,
+        "is_day": 1,
+        "condition": {
+            "text": "Overcast",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+            "code": 1009
+        },
+        "wind_mph": 3.4,
+        "wind_kph": 5.4,
+        "wind_degree": 61,
+        "wind_dir": "ENE",
+        "pressure_mb": 1027.0,
+        "pressure_in": 30.32,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 41,
+        "cloud": 100,
+        "feelslike_c": 24.9,
+        "feelslike_f": 76.9,
+        "windchill_c": 24.8,
+        "windchill_f": 76.6,
+        "heatindex_c": 25.1,
+        "heatindex_f": 77.3,
+        "dewpoint_c": 11.0,
+        "dewpoint_f": 51.8,
+        "vis_km": 13.0,
+        "vis_miles": 8.0,
+        "uv": 8.0,
+        "gust_mph": 3.9,
+        "gust_kph": 6.3
+    }
+}
