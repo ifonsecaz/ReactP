@@ -6,16 +6,70 @@ const CVPreview = (props) => {
     const [experienceId,setExperienceId] = useState(100);
     const [skillId,setSkillId] = useState(1000);
     
-    const [personalInfo,setPersonalInfo]=useState({
-        name: '',
-        email: '',
-        phone: '',
-        address: ''
+    const [savedM, setSavedM] = useState(null);
+
+    const [personalInfo,setPersonalInfo]=useState(()=>{
+        const storedItems=localStorage.getItem('personalInfo');
+        if(storedItems){
+            const parsedData = JSON.parse(storedItems);
+            console.log(parsedData);
+            return {name: parsedData.name,
+                email: parsedData.email,
+                phone: parsedData.phone,
+                address: parsedData.address};
+        }
+        else{
+            return{
+                name: '',
+                email: '',
+                phone: '',
+                address: ''
+            };
+        }
+
     });
 
-    const [education, setEducation] = useState([]);
-    const [experience, setExperience] = useState([]);
-    const [skills, setSkills] = useState([]);
+    const [education, setEducation] = useState(()=>{
+        const storedItems=localStorage.getItem('education');
+        const storedId=localStorage.getItem('educationId');
+        if(storedItems&&storedId){
+            const parsedData = JSON.parse(storedItems);
+            
+            setEducationId(Number(storedId));
+            return parsedData;
+        }
+        else{
+            return [];
+        }
+    });
+
+    const [experience, setExperience] = useState(()=>{
+        const storedItems=localStorage.getItem('experience');
+        const storedId=localStorage.getItem('experienceId');
+        if(storedItems&&storedId){
+            const parsedData = JSON.parse(storedItems);
+            
+            setExperienceId(Number(storedId));
+            return parsedData;
+        }
+        else{
+            return [];
+        }
+    });
+
+    const [skills, setSkills] = useState(()=>{
+        const storedItems=localStorage.getItem('skills');
+        const storedId=localStorage.getItem('skillId');
+        if(storedItems&&storedId){
+            const parsedData = JSON.parse(storedItems);
+            
+            setSkillId(Number(storedId));
+            return parsedData;
+        }
+        else{
+            return [];
+        }
+    });
 
     const changeInfo = () => {
         const newPerInfo={
@@ -28,7 +82,7 @@ const CVPreview = (props) => {
     };
     
     useEffect(() => {
-        if (props.personalInfo&&props.personalInfo!=="") { 
+        if (props.personalInfo&&props.personalInfo.name) { 
             console.log(education)
             console.log(education.length)
             changeInfo();
@@ -111,21 +165,72 @@ const CVPreview = (props) => {
         }
     }, [props.skills]);
 
-    const onDeleteInformation = (id) =>{
-        
-    }
-    const onDeleteEducation = (id) =>{
-        
-    }
-    const onDeleteExperience = (id) =>{
-        
-    }
-    const onDeleteSkill = (id) =>{
-        
+    const onDelete = (tag,id) =>{
+        if(tag==="education"){
+            setEducation(prevItems => prevItems.filter(item => item.id !== id));
+        }
+        else if(tag==="experience"){
+            setExperience(prevItems => prevItems.filter(item => item.id !== id));
+        }
+        else if(tag==="skills"){
+            setSkills(prevItems => prevItems.filter(item => item.id !== id));
+        }
     }
 
-    const onEdit = (id) =>{
-        
+    const onEdit = (tag,id) =>{
+        if(tag==="education"){
+            setEducation(prevItems =>
+                prevItems.map(item =>
+                    item.id === id ? { ...item, degree: prompt("Degree:", item.degree), institution: prompt("Institution:",item.institution), year : prompt("Year:",item.year) } : item
+                )
+            );
+        }
+        else if(tag==="experience"){
+            setExperience(prevItems =>
+                prevItems.map(item =>
+                    item.id === id ? { ...item, jobTitle: prompt("Job title:", item.jobTitle), company: prompt("Company:",item.company), duration : prompt("Duration:",item.duration), responsabilities : prompt("Responsabilities:",item.responsabilities) } : item
+                )
+            );
+        }
+        else if(tag==="skills"){
+            setSkills(prevItems =>
+                prevItems.map(item =>
+                    item.id === id ? { ...item, skill: prompt("Skill:", item.skill) } : item
+                )
+            );
+        }
+    }
+
+    const save = () => {
+        localStorage.setItem('personalInfo', JSON.stringify(personalInfo));
+        localStorage.setItem('educationId',JSON.stringify(educationId));
+        localStorage.setItem('education',JSON.stringify(education));
+        localStorage.setItem('experienceId',JSON.stringify(experienceId));
+        localStorage.setItem('experience',JSON.stringify(experience));
+        localStorage.setItem('skillId',JSON.stringify(skillId));
+        localStorage.setItem('skills',JSON.stringify(skills));
+        console.log("Saved");
+        setSavedM("Information saved");
+        setTimeout(() => setSavedM(null), 3000);  
+    }
+
+    const reset = () => {
+        setPersonalInfo({
+            name: '',
+            email: '',
+            phone: '',
+            address: ''
+        });
+        setEducation([]);
+        setExperience([]);
+        setSkills([]);
+        setEducationId(1);
+        setExperienceId(100);
+        setSkillId(1000);
+        localStorage.clear();
+        console.log("Reset");
+        setSavedM("Information reseted");
+        setTimeout(() => setSavedM(null), 3000);
     }
 
   return (
@@ -149,8 +254,8 @@ const CVPreview = (props) => {
                     <h3>{edItem.degree}</h3>
                     <p>{edItem.institution} | {edItem.year}</p>
                     <div className="item-actions">
-                    <button onClick={() => onEdit(edItem.id)}>Edit</button>
-                    <button onClick={() => onDeleteEducation(edItem.id)}>Delete</button>
+                    <button onClick={() => onEdit("education",edItem.id)}>Edit</button>
+                    <button onClick={() => onDelete("education",edItem.id)}>Delete</button>
                     </div>
                 </div>
             </li>
@@ -172,8 +277,8 @@ const CVPreview = (props) => {
                     <p>{exItem.company} | {exItem.duration}</p>
                     <p className="responsabilities">{exItem.responsabilities}</p>
                     <div className="item-actions">
-                    <button onClick={() => onEdit(exItem.id)}>Edit</button>
-                    <button onClick={() => onDeleteExperience(exItem.id)}>Delete</button>
+                    <button onClick={() => onEdit("experience",exItem.id)}>Edit</button>
+                    <button onClick={() => onDelete("experience",exItem.id)}>Delete</button>
                     </div>
                 </div>
             </li>
@@ -192,8 +297,8 @@ const CVPreview = (props) => {
               <li key={skill.id}>
                 {skill.skill}
                 <div className="item-actions">
-                  <button onClick={() => onEdit(skill.id)}>Edit</button>
-                  <button onClick={() => onDeleteSkill(skill.id)}>Delete</button>
+                  <button onClick={() => onEdit("skills",skill.id)}>Edit</button>
+                  <button onClick={() => onDelete("skills",skill.id)}>Delete</button>
                 </div>
               </li>
             ))}
@@ -202,6 +307,13 @@ const CVPreview = (props) => {
           <p>No skills added</p>
         )}
       </section>
+    <div className="item-actions">
+        <button onClick={() => save()}>Save</button>
+        <button onClick={() => reset()}>Reset</button>
+        
+    </div>  
+    <br></br>
+    {savedM && (<div className="success-message">{savedM}</div>)}
     </div>
   );
 };

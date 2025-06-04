@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# CV Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based web application that allows users to create a professional CV (Curriculum Vitae) through a simple and interactive interface. Users can input personal details, education, experience, and skills, preview them live, and persist the data in local storage.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- Input and validate personal information, education, work experience, and skills.
 
-### `npm start`
+- Real-time CV preview component.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Client-side form validation (email and phone).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Local storage persistence of entered data.
 
-### `npm test`
+- Edit and delete functionality for each CV entry.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Minimal UI using plain CSS.
 
-### `npm run build`
+## 🛠️ Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React](https://reactjs.org/) — Functional components & hooks
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML/CSS — Custom styling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Local Storage — For data persistence
 
-### `npm run eject`
+## 📂 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cv-generator/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+├── public/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+│ └── index.html
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+├── src/
 
-## Learn More
+│ ├── components/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+│ │ ├── Header.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+│ │ ├── CVForm.js
 
-### Code Splitting
+│ │ ├── CVPreview.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+│ │ ├── Header.css
 
-### Analyzing the Bundle Size
+│ │ ├── CVForm.css
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+│ │ └── CVPreview.css
 
-### Making a Progressive Web App
+│ ├── App.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+│ └── index.js
 
-### Advanced Configuration
+├── package.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+└── README.md
 
-### Deployment
+## 🧪 Validations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Email:** Must be a valid email format.
 
-### `npm run build` fails to minify
+- **Phone:** Must follow the format `##-####-####`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Required fields must be filled to proceed.
+
+## 🔧 Installation & Running Locally
+
+npm install
+
+npm start
+
+Then navigate to http://localhost:3000/ in your browser.
+
+📦 Dependencies
+
+React (^18)
+
+React DOM
+
+Webpack / Create React App
