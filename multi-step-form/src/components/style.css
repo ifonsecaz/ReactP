@@ -1,0 +1,149 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7f9;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* Form Container */
+.form-container {
+  margin-top: 20px;
+}
+
+/* Form Step */
+.form-step {
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Error Message */
+.error {
+  color: #d9534f;
+  font-size: 0.875rem;
+  margin-top: -10px;
+}
+
+/* Success Message */
+.success {
+  color: #28a745;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled,
+.btn.btn-disabel {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Progress Bar */
+.progress-container {
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #007bff;
+  transition: width 0.4s ease;
+  border-radius: 6px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  background: #ccc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.step.completed {
+  background: #007bff;
+}
+
+/* Confirmation Step */
+.confirmation-step {
+  padding: 20px;
+}
+
+.summary {
+  margin-bottom: 20px;
+}
+
+.summary p {
+  margin: 4px 0;
+}
