@@ -1,0 +1,14 @@
+image {
+    maxHeight: '90%';
+    maxWidth: '90%';
+    objectFit: 'contain'
+}
+
+div {
+    height: '150px';
+    cursor: 'pointer';
+    borderRadius: '10px';
+    boxShadow: '0 4px 8px rgba(0,0,0,0.1)';
+    transition: 'transform 0.3s';
+    transformStyle: 'preserve-3d'
+}
