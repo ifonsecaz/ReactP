@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {useLocation} from 'react-router-dom';
 import { initializeWeatherApi, fetchWeatherData } from './WeatherApi';
 import styled, { keyframes } from 'styled-components';

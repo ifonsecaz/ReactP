@@ -1,0 +1,64 @@
+2025-06-10T00:03:51.744-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:08:51.932-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:12:14.197-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-7] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:12:14.266-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-7] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:13:51.943-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:14:49.730-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-9] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:14:49.942-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-9] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:16:55.371-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-1] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:16:55.436-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-1] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:17:47.421-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-2] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:17:47.495-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-2] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:18:51.957-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:18:52.251-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-4] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:18:52.317-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-4] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:19:33.204-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-5] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:19:33.268-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-5] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:21:44.071-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-7] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:21:44.136-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-7] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:23:51.963-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:28:51.966-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:33:51.975-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:38:51.977-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:41:20.351-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-9] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:41:20.419-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-9] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:42:46.258-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-1] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:42:46.325-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-1] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:43:51.989-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:44:59.743-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-3] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:44:59.855-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-3] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:48:51.994-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:53:52.003-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T00:55:06.472-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-5] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T00:55:06.558-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-5] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T00:58:52.014-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T01:00:01.629-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-7] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T01:00:01.722-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-7] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T01:01:22.973-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-9] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T01:01:23.038-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-9] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T01:03:52.026-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T01:08:52.032-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T01:09:24.736-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-1] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T01:09:24.804-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-1] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T01:10:33.090-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-3] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T01:10:33.156-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-3] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T01:10:59.001-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-4] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T01:10:59.095-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-4] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T01:11:17.235-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-5] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/register from 127.0.0.1
+2025-06-10T01:11:17.441-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-5] c.e.u.security.RequestLoggingFilter      : Response: /auth/register (Status: 200)
+2025-06-10T01:12:41.719-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-7] c.e.u.security.RequestLoggingFilter      : Request: POST /auth/login from 127.0.0.1
+2025-06-10T01:12:41.817-06:00  INFO 24124 --- [userservice] [http-nio-8081-exec-7] c.e.u.security.RequestLoggingFilter      : Response: /auth/login (Status: 200)
+2025-06-10T01:13:52.034-06:00  INFO 24124 --- [userservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T01:15:35.478-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERSERVICE with eureka with status DOWN
+2025-06-10T01:15:35.479-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749539735479, current=DOWN, previous=UP]
+2025-06-10T01:15:35.479-06:00  INFO 24124 --- [userservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERSERVICE/DESKTOP-QDBU73I:userservice:8081: registering service...
+2025-06-10T01:15:35.593-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-10T01:15:35.599-06:00  INFO 24124 --- [userservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERSERVICE/DESKTOP-QDBU73I:userservice:8081 - registration status: 204
+2025-06-10T01:15:35.689-06:00  INFO 24124 --- [userservice] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-10T01:15:35.835-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T01:15:35.917-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T01:15:35.941-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T01:15:35.941-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-10T01:15:38.952-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-10T01:15:39.250-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERSERVICE/DESKTOP-QDBU73I:userservice:8081 - deregister  status: 200
+2025-06-10T01:15:39.250-06:00  INFO 24124 --- [userservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
