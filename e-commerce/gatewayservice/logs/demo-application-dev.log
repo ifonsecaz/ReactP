@@ -1711,3 +1711,590 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-10T07:42:41Z. Curren
 2025-06-10T11:46:15.669-06:00  INFO 35964 --- [gatewayservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2025-06-10T11:46:15.687-06:00  INFO 35964 --- [gatewayservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAYSERVICE/DESKTOP-QDBU73I:gatewayservice:8080 - deregister  status: 200
 2025-06-10T11:46:15.687-06:00  INFO 35964 --- [gatewayservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-10T11:46:28.047-06:00  INFO 13876 --- [gatewayservice] [main] c.e.g.GatewayserviceApplication          : Starting GatewayserviceApplication using Java 23.0.1 with PID 13876 (D:\ifons\Documents\JavaProjects\JavaScript\e-commerce\gatewayservice\target\classes started by ifons in D:\ifons\Documents\JavaProjects\JavaScript\e-commerce\gatewayservice)
+2025-06-10T11:46:28.049-06:00  INFO 13876 --- [gatewayservice] [main] c.e.g.GatewayserviceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T11:46:28.749-06:00  INFO 13876 --- [gatewayservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T11:46:28.844-06:00  INFO 13876 --- [gatewayservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2025-06-10T11:46:29.000-06:00  INFO 13876 --- [gatewayservice] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ba79db86-0b41-35ed-b04e-d8b33fc58c18
+2025-06-10T11:46:29.539-06:00  INFO 13876 --- [gatewayservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T11:46:29.551-06:00  INFO 13876 --- [gatewayservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T11:46:29.551-06:00  INFO 13876 --- [gatewayservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-10T11:46:29.656-06:00  INFO 13876 --- [gatewayservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T11:46:29.657-06:00  INFO 13876 --- [gatewayservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1571 ms
+2025-06-10T11:46:29.905-06:00  INFO 13876 --- [gatewayservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T11:46:29.964-06:00  INFO 13876 --- [gatewayservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-10T11:46:30.002-06:00  INFO 13876 --- [gatewayservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T11:46:30.232-06:00  INFO 13876 --- [gatewayservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T11:46:30.257-06:00  INFO 13876 --- [gatewayservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T11:46:30.260-06:00  WARN 13876 --- [gatewayservice] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-06-10T11:46:30.587-06:00  INFO 13876 --- [gatewayservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e09c0b
+2025-06-10T11:46:30.589-06:00  INFO 13876 --- [gatewayservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T11:46:30.664-06:00  INFO 13876 --- [gatewayservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10T11:46:31.256-06:00  INFO 13876 --- [gatewayservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T11:46:31.295-06:00  INFO 13876 --- [gatewayservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T11:46:31.646-06:00  WARN 13876 --- [gatewayservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T11:46:32.024-06:00  INFO 13876 --- [gatewayservice] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2025-06-10T11:46:32.122-06:00  INFO 13876 --- [gatewayservice] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-10T11:46:32.492-06:00  INFO 13876 --- [gatewayservice] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-10T11:46:32.535-06:00  WARN 13876 --- [gatewayservice] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-10T11:46:32.580-06:00  INFO 13876 --- [gatewayservice] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-10T11:46:32.596-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-10T11:46:32.599-06:00  INFO 13876 --- [gatewayservice] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T11:46:32.605-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-10T11:46:32.605-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-10T11:46:32.605-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-10T11:46:32.605-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-10T11:46:32.605-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-10T11:46:32.605-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-10T11:46:32.605-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-10T11:46:32.839-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-10T11:46:32.841-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-10T11:46:32.842-06:00  INFO 13876 --- [gatewayservice] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-10T11:46:32.843-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749577592843 with initial instances count: 3
+2025-06-10T11:46:32.849-06:00  INFO 13876 --- [gatewayservice] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAYSERVICE with eureka with status UP
+2025-06-10T11:46:32.849-06:00  INFO 13876 --- [gatewayservice] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749577592849, current=UP, previous=STARTING]
+2025-06-10T11:46:32.850-06:00  INFO 13876 --- [gatewayservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAYSERVICE/DESKTOP-QDBU73I:gatewayservice:8080: registering service...
+2025-06-10T11:46:32.874-06:00  INFO 13876 --- [gatewayservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-10T11:46:32.875-06:00  INFO 13876 --- [gatewayservice] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-06-10T11:46:32.879-06:00  INFO 13876 --- [gatewayservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAYSERVICE/DESKTOP-QDBU73I:gatewayservice:8080 - registration status: 204
+2025-06-10T11:46:32.895-06:00  INFO 13876 --- [gatewayservice] [main] c.e.g.GatewayserviceApplication          : Started GatewayserviceApplication in 5.194 seconds (process running for 5.586)
+2025-06-10T11:46:45.766-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-10T11:46:45.767-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-10T11:46:45.768-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-10T11:46:45.789-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:45.789-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:45.789-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:45.794-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:45.795-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:45.795-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:52.316-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:52.317-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:52.774-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:52.807-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:52.807-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:52.807-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:52.807-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:52.853-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:52.875-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 400)
+2025-06-10T11:46:52.876-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 400)
+2025-06-10T11:46:54.361-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:54.369-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:54.662-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:46:54.663-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:46:54.989-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:54.989-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:54.990-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:54.990-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:55.581-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:55.591-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:56.251-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:46:56.252-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:46:56.577-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:56.577-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:56.578-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:56.578-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:57.964-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/1 from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:57.971-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/1 from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:58.063-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/1 (Status: 200)
+2025-06-10T11:46:58.063-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/1 (Status: 200)
+2025-06-10T11:46:59.204-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:59.211-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:59.227-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:46:59.227-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:46:59.461-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:59.469-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:59.490-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/3 (Status: 200)
+2025-06-10T11:46:59.490-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/3 (Status: 200)
+2025-06-10T11:46:59.545-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:59.552-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T11:46:59.572-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T11:46:59.573-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T11:47:24.090-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:24.090-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:24.406-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:24.406-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:24.406-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:24.406-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:36.907-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/register from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:36.908-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/register from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:37.595-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:37.595-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:37.595-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:37.595-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:40.131-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:40.146-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:40.160-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:47:40.161-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:47:42.493-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:42.493-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:42.493-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:42.493-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:43.520-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:43.528-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:43.627-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:47:43.628-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:47:43.958-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:43.958-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:43.959-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:43.959-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:44.383-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:44.390-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:44.505-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:47:44.506-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:47:44.841-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:44.841-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:44.842-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:44.842-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:45.580-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:45.587-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:45.719-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:47:45.719-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:47:46.054-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:46.054-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:46.055-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:46.055-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:49.039-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:49.046-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:49.128-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/3 (Status: 200)
+2025-06-10T11:47:49.128-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/3 (Status: 200)
+2025-06-10T11:47:50.549-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: DELETE /api/user/remove-from-cart/product/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:50.556-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: DELETE /api/user/remove-from-cart/product/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:50.806-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/remove-from-cart/product/3 (Status: 200)
+2025-06-10T11:47:50.806-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/remove-from-cart/product/3 (Status: 200)
+2025-06-10T11:47:51.829-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/1 from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:51.840-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/1 from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:51.981-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/1 (Status: 200)
+2025-06-10T11:47:51.982-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/1 (Status: 200)
+2025-06-10T11:47:52.295-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/1 from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:52.302-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/1 from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:52.464-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/1 (Status: 200)
+2025-06-10T11:47:52.465-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/1 (Status: 200)
+2025-06-10T11:47:54.590-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/confirm-order from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:54.600-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/confirm-order from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:55.281-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Response: /api/user/confirm-order (Status: 200)
+2025-06-10T11:47:55.281-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Response: /api/user/confirm-order (Status: 200)
+2025-06-10T11:47:56.884-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:56.885-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:57.188-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:57.188-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:59.529-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:59.535-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:59.672-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:47:59.673-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:47:59.796-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:59.796-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:59.999-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:47:59.999-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:00.000-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:00.007-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:00.190-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:00.190-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:00.217-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:00.218-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:00.529-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:00.530-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:01.804-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:01.810-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:01.919-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:01.920-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:02.069-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:02.070-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:02.244-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:02.244-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:02.245-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:02.250-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:02.369-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:02.370-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:02.390-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:02.390-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:02.692-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:02.692-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:05.821-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/7 from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:05.826-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/increase-unit/product/7 from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:05.919-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/7 (Status: 200)
+2025-06-10T11:48:05.919-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/increase-unit/product/7 (Status: 200)
+2025-06-10T11:48:06.935-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/confirm-order from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:06.942-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/confirm-order from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:07.438-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/confirm-order (Status: 200)
+2025-06-10T11:48:07.438-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/confirm-order (Status: 200)
+2025-06-10T11:48:09.433-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:09.433-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:09.433-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:09.433-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:10.399-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:10.404-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:10.530-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:10.530-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:10.859-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:10.859-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:10.859-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:10.859-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:11.211-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:11.218-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:11.305-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:11.305-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:48:11.639-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:11.639-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:11.639-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:11.639-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:12.758-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:12.765-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:12.780-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:48:12.780-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:48:13.102-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/14 from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:13.109-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/14 from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:13.124-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/14 (Status: 200)
+2025-06-10T11:48:13.124-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/14 (Status: 200)
+2025-06-10T11:48:13.354-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/15 from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:13.361-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/15 from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:13.376-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/15 (Status: 200)
+2025-06-10T11:48:13.376-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/15 (Status: 200)
+2025-06-10T11:48:13.449-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/16 from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:13.454-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/16 from 0:0:0:0:0:0:0:1
+2025-06-10T11:48:13.467-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/16 (Status: 200)
+2025-06-10T11:48:13.468-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/16 (Status: 200)
+2025-06-10T11:49:37.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:37.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:37.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:37.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:37.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:37.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:45.099-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category/Low%20Maintenance%20Plants from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:45.099-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category/Low%20Maintenance%20Plants from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:49.438-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category/Medicinal%20Plants from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:49.438-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category/Medicinal%20Plants from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:54.007-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/name/plant from 0:0:0:0:0:0:0:1
+2025-06-10T11:49:54.007-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/name/plant from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:05.619-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:05.619-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:05.620-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:05.620-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.045-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.046-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.451-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.451-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.451-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.451-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.451-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.457-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.472-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T11:50:16.473-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T11:50:16.710-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.716-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.733-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T11:50:16.733-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T11:50:16.802-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:16.803-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:17.067-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:17.067-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:19.407-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:19.414-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: POST /api/user/add-to-cart from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:19.529-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:50:19.530-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/add-to-cart (Status: 201)
+2025-06-10T11:50:19.873-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:19.873-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:19.874-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:19.874-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:29.148-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:29.154-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:29.168-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:50:29.168-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:50:29.478-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:29.484-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:29.499-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/3 (Status: 200)
+2025-06-10T11:50:29.499-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/3 (Status: 200)
+2025-06-10T11:50:29.742-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:29.750-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:29.770-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T11:50:29.770-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T11:50:37.590-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:37.590-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:37.906-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:37.906-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:38.887-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:38.892-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-orders from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:38.905-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:50:38.905-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-orders (Status: 200)
+2025-06-10T11:50:39.149-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:39.153-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/3 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:39.169-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/3 (Status: 200)
+2025-06-10T11:50:39.170-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/3 (Status: 200)
+2025-06-10T11:50:39.226-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:39.231-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:39.244-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T11:50:39.244-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T11:50:39.807-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:39.808-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:40.115-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:40.116-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:42.138-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category/Air%20Purifying%20Plants from 0:0:0:0:0:0:0:1
+2025-06-10T11:50:42.138-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category/Air%20Purifying%20Plants from 0:0:0:0:0:0:0:1
+2025-06-10T11:51:32.618-06:00  INFO 13876 --- [gatewayservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T11:52:53.128-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:52:53.128-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:52:53.129-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:52:53.129-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:53:01.823-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:53:01.823-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:53:01.823-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:53:01.823-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:54:13.124-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:54:13.124-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:54:13.125-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T11:54:13.125-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T11:56:32.633-06:00  INFO 13876 --- [gatewayservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T12:25:49.193-06:00  WARN 13876 --- [gatewayservice] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m18s394ms121µs800ns).
+2025-06-10T12:30:20.978-06:00  INFO 13876 --- [gatewayservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T12:34:30.119-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:34:30.119-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:34:30.119-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:34:30.119-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:35:20.987-06:00  INFO 13876 --- [gatewayservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T12:36:05.006-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:36:05.006-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:36:05.006-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:36:05.006-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:40:20.989-06:00  INFO 13876 --- [gatewayservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T12:42:22.981-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: PUT /api/user/confirm-order from 0:0:0:0:0:0:0:1
+2025-06-10T12:42:22.984-06:00 ERROR 13876 --- [gatewayservice] [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-10T18:20:16Z. Current time: 2025-06-10T18:42:22Z, a difference of 1326982 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.ecommerce.gatewayservice.security.JwtUtil.getUsernameFromToken(JwtUtil.java:29) ~[classes/:na]
+	at com.ecommerce.gatewayservice.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:66) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.5.jar:6.4.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-06-10T12:45:20.991-06:00  INFO 13876 --- [gatewayservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T12:49:54.335-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:49:54.335-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:49:54.335-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:49:54.335-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:49:54.335-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:49:54.335-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:49:59.759-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:49:59.760-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.201-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.201-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.201-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.201-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.202-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.262-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.317-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:00.317-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:00.457-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.464-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.485-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:00.485-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:00.633-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.633-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.820-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:00.820-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:01.102-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:01.103-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:01.422-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:01.422-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:01.422-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:01.422-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.347-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.347-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.602-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.607-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.618-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:08.618-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:08.768-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.768-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.768-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.768-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.768-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.777-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.787-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:08.787-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:08.941-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:08.941-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:09.135-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:09.135-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:09.949-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:09.950-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:10.257-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:10.257-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:10.257-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:10.257-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.327-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.327-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.583-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.591-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.608-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:18.608-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:18.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.743-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.749-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.765-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:18.765-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:18.920-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:18.920-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:19.107-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:19.107-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:19.500-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:19.501-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:19.818-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:19.818-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:19.819-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:19.819-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:21.001-06:00  INFO 13876 --- [gatewayservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T12:50:25.058-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.058-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.319-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.319-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.337-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:25.337-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:25.487-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.487-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.487-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.487-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.487-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.497-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.507-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:25.507-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:25.652-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.652-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.853-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:25.857-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:26.079-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:26.079-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:26.397-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:26.397-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:26.399-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:26.399-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:31.860-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:31.860-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.121-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.127-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-cart from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.137-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:32.137-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-1] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-cart (Status: 200)
+2025-06-10T12:50:32.269-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.269-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.269-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.276-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-7] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.276-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-4] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.276-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Request: GET /api/user/view-order-details/13 from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.304-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:32.304-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-3] c.e.g.security.AuthTokenFilter           : Response: /api/user/view-order-details/13 (Status: 200)
+2025-06-10T12:50:32.452-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.452-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-9] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.637-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.637-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-8] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.845-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:32.845-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-2] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/logout from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:33.157-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:33.157-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:33.157-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-5] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/list from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:33.157-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-10] c.e.g.security.AuthTokenFilter           : Request: GET /api/products/category from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:38.358-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:50:38.358-06:00  INFO 13876 --- [gatewayservice] [http-nio-8080-exec-6] c.e.g.security.AuthTokenFilter           : Request: POST /api/auth/login from 0:0:0:0:0:0:0:1
+2025-06-10T12:55:21.010-06:00  INFO 13876 --- [gatewayservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T13:00:21.018-06:00  INFO 13876 --- [gatewayservice] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-10T13:04:20.551-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application GATEWAYSERVICE with eureka with status DOWN
+2025-06-10T13:04:20.551-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749582260551, current=DOWN, previous=UP]
+2025-06-10T13:04:20.552-06:00  INFO 13876 --- [gatewayservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAYSERVICE/DESKTOP-QDBU73I:gatewayservice:8080: registering service...
+2025-06-10T13:04:20.730-06:00  INFO 13876 --- [gatewayservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAYSERVICE/DESKTOP-QDBU73I:gatewayservice:8080 - registration status: 204
+2025-06-10T13:04:20.952-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-10T13:04:21.011-06:00  INFO 13876 --- [gatewayservice] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-10T13:04:21.041-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T13:04:21.508-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T13:04:21.558-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T13:04:21.566-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-10T13:04:24.569-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-10T13:04:24.569-06:00  WARN 13876 --- [gatewayservice] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-06-10T13:04:24.764-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAYSERVICE/DESKTOP-QDBU73I:gatewayservice:8080 - deregister  status: 200
+2025-06-10T13:04:24.823-06:00  INFO 13876 --- [gatewayservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
