@@ -40,6 +40,9 @@ INSERT INTO product (name, description, image, price, stock_quantity) VALUES
 ('Rubber Plant', 'Easy to care for and effective at removing toxins.', 'https://cdn.pixabay.com/photo/2020/02/15/11/49/flower-4850729_1280.jpg', 17.00, 50),
 ('Aloe Vera', 'Purifies the air and has healing properties for skin.', 'https://cdn.pixabay.com/photo/2018/04/02/07/42/leaf-3283175_1280.jpg', 14.00, 50);
 
+INSERT INTO product (name, description, image, price, stock_quantity) VALUES
+('Bambu Palm', 'Tesst', 'https://www.aprilplants.com/cdn/shop/files/Chamaedorea-Seifrizii-rhodes-planta-de-interior-palmera_1024x.jpg?v=1721644109',200.0,0);
+
 -- Insert products (Aromatic Fragrant Plants)
 INSERT INTO product (name, description, image, price, stock_quantity) VALUES 
 ('Lavender', 'Calming scent, used in aromatherapy.', 'https://images.unsplash.com/photo-1611909023032-2d6b3134ecba?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 20.00, 50),
@@ -76,6 +79,9 @@ INSERT INTO product (name, description, image, price, stock_quantity) VALUES
 INSERT INTO product_category (product_id, category_id) VALUES
 (1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1);
 
+INSERT INTO product_category (product_id, category_id) VALUES
+(32, 1);
+
 -- Aromatic Fragrant Plants (category_id = 2)
 INSERT INTO product_category (product_id, category_id) VALUES
 (7, 2), (8, 2), (9, 2), (10, 2), (11, 2), (12, 2);
@@ -92,6 +98,8 @@ INSERT INTO product_category (product_id, category_id) VALUES
 INSERT INTO product_category (product_id, category_id) VALUES
 (22, 5), (23, 5), (1, 5), (24, 5), (25, 5), (26, 5);
 
+select *
+from product;
 
 select category.*, product.*
 from product inner join product_category on product.product_id = product_category.product_id inner join category on category.category_id = product_category.category_id
